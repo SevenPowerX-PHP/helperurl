@@ -2,6 +2,7 @@
 
 
 composer.json лоакльное подключение: 
+
         {
                 "name": "splaa/testblog",
                 "minimum-stability": "dev",
