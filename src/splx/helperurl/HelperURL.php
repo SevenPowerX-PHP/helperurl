@@ -28,7 +28,7 @@
 
 	    public function getCurPageURLHtmlString()
 	    {
-		    $pageURL = 'http';
+		    $pageURL = 'Server Name: ' . 'http';
 		    if (isset($_SERVER['HTTPS'])) {
 			    if ($_SERVER['HTTPS'] == 'on') {
 				    $pageURL .= "s";
@@ -36,7 +36,7 @@
 		    }
 		    $pageURL .= '://';
 		    if ($_SERVER['SERVER_PORT'] != '80') {
-			    $pageURL .= 'Server Name: ' . $_SERVER['SERVER_NAME'] . ':'
+			    $pageURL .= $_SERVER['SERVER_NAME'] . ':'
 				    . $_SERVER['SERVER_PORT'] . '<br>'
 				    . 'File Name: ' . $_SERVER['SCRIPT_FILENAME'] . '<br>'
 				    . 'Document Root: ' . $_SERVER['DOCUMENT_ROOT'] . '<br>';
