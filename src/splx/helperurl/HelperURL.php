@@ -21,7 +21,7 @@
                  . $_SERVER['SCRIPT_FILENAME'] 
                  . $_SERVER['DOCUMENT_ROOT'];
              }else{
-                 $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER['REQUEST_URI'];
+	             $pageURL .= $_SERVER["SERVER_NAME"] . $_SERVER['REQUEST_URI'] . ':' . $_SERVER['SERVER_PORT'];
              }
              return $pageURL;
          }
