@@ -16,6 +16,21 @@ composer.json лоакльное подключение:
                     "splx/helperurl": "1.0"
                 }
             }
+composer.json подключение с GitHub: 
+
+        {
+                "name": "splaa/testblog",
+                "minimum-stability": "dev",
+                "repositories": [
+                    {
+                        "type": "git",
+                        "url": "git@github.com:SevenPowerX-PHP/helperurl.git"
+                    }
+                ],
+                "require": {
+                    "splx/helperurl": "1.0"
+                }
+            }
 
 example index.php
 
